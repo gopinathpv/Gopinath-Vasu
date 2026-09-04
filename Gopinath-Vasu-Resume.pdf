@@ -1,0 +1,263 @@
+%PDF-1.4
+%ASCII
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 4385 >>
+stream
+BT
+/F2 18 Tf
+48 760 Td
+(GOPINATH POLASANI VASU) Tj
+/F2 10 Tf
+1 0 0 1 48 738 Tm
+(Gopinpv3@gmail.com | LinkedIn: linkedin.com/in/gopinathpolasanivasu/) Tj
+/F1 8.5 Tf
+1 0 0 1 48 727 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 48 716 Tm
+(SUMMARY) Tj
+/F1 8.5 Tf
+1 0 0 1 48 703 Tm
+(Senior Full Stack Engineer with 10+ years of experience architecting high-availability web applications) Tj
+/F1 8.5 Tf
+1 0 0 1 48 692 Tm
+(and distributed systems across financial services, e-commerce, and contact center domains. Expertise in) Tj
+/F1 8.5 Tf
+1 0 0 1 48 681 Tm
+(React, JavaScript, TypeScript, Node.js, Python, micro-frontend architecture, and AWS with a strong track) Tj
+/F1 8.5 Tf
+1 0 0 1 48 670 Tm
+(record of building 0-to-1 products, integrating AI-powered capabilities, and optimizing application performance.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 659 Tm
+(Proven technical leadership experience driving architecture decisions, leading engineering teams, and) Tj
+/F1 8.5 Tf
+1 0 0 1 48 648 Tm
+(delivering scalable solutions for high-volume business operations.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 637 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 48 626 Tm
+(SKILLS) Tj
+/F1 8.5 Tf
+1 0 0 1 48 613 Tm
+(Languages: JavaScript, TypeScript, Java, Python) Tj
+/F1 8.5 Tf
+1 0 0 1 48 602 Tm
+(Frontend: React, Next.js, Redux, HTML5, CSS3, Tailwind CSS, Material UI, AG Grid, D3.js,) Tj
+/F1 8.5 Tf
+1 0 0 1 48 591 Tm
+(React Hook Form, React Query, Webpack, Vite) Tj
+/F1 8.5 Tf
+1 0 0 1 48 580 Tm
+(Backend & APIs: Node.js, Express, Flask, REST APIs, GraphQL, JWT, OAuth2) Tj
+/F1 8.5 Tf
+1 0 0 1 48 569 Tm
+(Databases: PostgreSQL, MongoDB, SQL) Tj
+/F1 8.5 Tf
+1 0 0 1 48 558 Tm
+(Cloud & DevOps: AWS, Docker, Kubernetes, Jenkins, GitHub Actions) Tj
+/F1 8.5 Tf
+1 0 0 1 48 547 Tm
+(Frontend Architecture: Micro Frontends, Module Federation, Component Architecture, State Management, SSR, SSG) Tj
+/F1 8.5 Tf
+1 0 0 1 48 536 Tm
+(Testing: Jest, React Testing Library, Cypress, JUnit) Tj
+/F1 8.5 Tf
+1 0 0 1 48 525 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 48 514 Tm
+(EXPERIENCE) Tj
+/F2 10 Tf
+1 0 0 1 48 501 Tm
+(Wells Fargo | Senior Software Engineer \(Contract\) | Jun 2026 - Present | Dallas, Texas) Tj
+/F1 8.5 Tf
+1 0 0 1 48 490 Tm
+(- Architected and integrated AI-powered Smart Assist into a high-volume contact center application using) Tj
+/F1 8.5 Tf
+1 0 0 1 48 479 Tm
+(  React, API Gateway, and Node.js, enabling contextual knowledge summaries and reducing customer resolution) Tj
+/F1 8.5 Tf
+1 0 0 1 48 468 Tm
+(  time by 25% for 4,000+ agents.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 457 Tm
+(- Designed and implemented Module Federation-based micro-frontends architecture across 5 micro-frontends) Tj
+/F1 8.5 Tf
+1 0 0 1 48 446 Tm
+(  supporting 6 lines of business, enabling independent deployment and release.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 435 Tm
+(- Led a 3-developer team, driving frontend architecture, integration patterns, and production feature delivery.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 424 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 48 413 Tm
+(Goldman Sachs | Senior Software Engineer \(Contract\) | Jul 2025 - Mar 2026 | Dallas, Texas) Tj
+/F1 8.5 Tf
+1 0 0 1 48 402 Tm
+(- Optimized frontend performance through code splitting, state management, API caching, and rendering) Tj
+/F1 8.5 Tf
+1 0 0 1 48 391 Tm
+(  optimizations, reducing page load time by ~10% and interaction latency by ~20%.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 380 Tm
+(- Replaced traditional tables with AG Grid and migrated forms to React Hook Form.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 369 Tm
+(- Developed a cross-border transaction workflow using React, Next.js, and TypeScript supporting 5,000+) Tj
+/F1 8.5 Tf
+1 0 0 1 48 358 Tm
+(  transactions daily.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 347 Tm
+(- Parallelized CI/CD test suites, reducing pipeline execution time by ~33%.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 336 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 48 325 Tm
+(Wells Fargo | Senior Software Engineer \(Contract\) | Jun 2023 - Jun 2025 | Dallas, Texas) Tj
+/F1 8.5 Tf
+1 0 0 1 48 314 Tm
+(- Architected the foundation of a next-generation contact center platform and initial React/TypeScript POC.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 303 Tm
+(- Designed Five9 integration architecture using React, Node.js, REST, and AWS for real-time agent workflows.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 292 Tm
+(- Integrated customer data services for context-aware department-specific workflows.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 281 Tm
+(- Established Module Federation micro-frontends and distributed application patterns.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 270 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 48 259 Tm
+(Goldman Sachs | Consultant \(Contract\) | Dec 2021 - Feb 2023 | Dallas, Texas) Tj
+/F1 8.5 Tf
+1 0 0 1 48 248 Tm
+(- Delivered financial workflows for loan prepayment, credit rating, origination, and loan management.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 237 Tm
+(- Designed micro frontend architecture and integrated React applications with Flask backend services.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 226 Tm
+(- Built full-stack capabilities using React, TypeScript, Python, Flask, REST, Docker, AWS, and SQL.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 215 Tm
+(- Optimized APIs, SQL queries, indexing, caching, and automated test coverage.) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2320 >>
+stream
+BT
+/F2 10 Tf
+1 0 0 1 48 760 Tm
+(Aperia Solutions | IS Lead Developer | Sep 2021 - Dec 2021 | Dallas, Texas) Tj
+/F1 8.5 Tf
+1 0 0 1 48 749 Tm
+(- Developed responsive React/TypeScript interfaces and led a distributed frontend engineering team.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 738 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 48 727 Tm
+(Infosys | Technology Analyst | Feb 2020 - Sep 2021 | Tampa, Florida) Tj
+/F1 8.5 Tf
+1 0 0 1 48 716 Tm
+(- Developed React/TypeScript dashboards for Verizon Power, Space & Cooling using REST, Redux, D3.js,) Tj
+/F1 8.5 Tf
+1 0 0 1 48 705 Tm
+(  Java, Spring Boot, and SQL.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 694 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 48 683 Tm
+(The University of Alabama | Research Assistant | Aug 2018 - Dec 2019 | Huntsville, Alabama) Tj
+/F1 8.5 Tf
+1 0 0 1 48 672 Tm
+(- Developed academic research web applications including a gamified atomic-configuration visualization) Tj
+/F1 8.5 Tf
+1 0 0 1 48 661 Tm
+(  platform and social-media vetting application.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 650 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 48 639 Tm
+(IBM | Associate Technical Operations | Jul 2015 - Dec 2017 | Hyderabad, India) Tj
+/F1 8.5 Tf
+1 0 0 1 48 628 Tm
+(- Developed responsive web applications for Sony e-commerce using JavaScript, jQuery, HTML, CSS, Bootstrap,) Tj
+/F1 8.5 Tf
+1 0 0 1 48 617 Tm
+(  JSON, and AJAX.) Tj
+/F1 8.5 Tf
+1 0 0 1 48 606 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 48 595 Tm
+(EDUCATION) Tj
+/F2 10 Tf
+1 0 0 1 48 582 Tm
+(The University of Alabama | Master of Science, Computer Science | Jan 2018 - Dec 2019) Tj
+/F2 10 Tf
+1 0 0 1 48 571 Tm
+(Anna University | Bachelor of Engineering, Computer Science | Aug 2011 - May 2015) Tj
+/F1 8.5 Tf
+1 0 0 1 48 560 Tm
+() Tj
+/F2 10 Tf
+1 0 0 1 48 549 Tm
+(PUBLICATION) Tj
+/F1 8.5 Tf
+1 0 0 1 48 536 Tm
+(GoCrystal: A Gamified Visual Analytics Tool for Analysis and Visualization of Atomic Configurations and) Tj
+/F1 8.5 Tf
+1 0 0 1 48 525 Tm
+(Thermodynamic Energy Models, Information Visualization \(SAGE\), 2020.) Tj
+ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000000406 00000 n 
+0000004842 00000 n 
+0000004982 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+7349
+%%EOF
