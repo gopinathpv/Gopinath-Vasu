@@ -1,92 +1,24 @@
-import "./App.css";
-import logo from "./logo.png";
-import { useEffect, useState } from "react";
-import { MemoryRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Home from "./Component/Home";
-import loader from "./loader.svg";
-import About from "./Component/About";
-import Education from "./Component/Education";
-import Experience from "./Component/Experience";
-import Contact from "./Component/Contact";
-import { navBarStyles } from "./Component/ConstantFile";
+import { useMemo, useRef, useState } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { Float, OrbitControls, Sphere, Line, Text } from '@react-three/drei';
+import { ArrowDown, ArrowUpRight, BrainCircuit, Cloud, Code2, Database, Github, Linkedin, Mail, Menu, X, Zap } from 'lucide-react';
+import './App.css';
 
-const navbarStyle = {};
+const experience = [
+  ['Wells Fargo','Senior / Lead Software Engineer','2023 — Present','AI • Micro Frontends',['AI Smart Assist supporting 4,000+ agents and reducing resolution time by 25%.','Built scalable React, TypeScript and Node.js experiences across financial workflows.','Designed micro-frontend experiences with resilient service integrations.']],
+  ['Goldman Sachs','Senior Software Engineer','2021 — 2026','Distributed Systems',['Built cross-border transaction workflows handling 5,000+ transactions per day.','Worked across React, Node.js, REST APIs, AWS and enterprise financial platforms.','Improved reliability, performance and developer experience through reusable architecture.']],
+  ['Aperia Technologies','Software Engineer','2021','Connected Systems',['Developed production web experiences and services for connected-vehicle technology.']],
+  ['Infosys','Software Engineer','2020 — 2021','Enterprise Web',['Delivered responsive applications, APIs, testing and CI/CD in Agile teams.']],
+  ['IBM','Software Engineer','2015 — 2017','Enterprise Engineering',['Built enterprise applications and developed a foundation in scalable software engineering.']]
+];
+const skills=['React','TypeScript','JavaScript','Node.js','Next.js','AWS','REST APIs','GraphQL','Micro Frontends','Module Federation','Python','PostgreSQL','Docker','Jest','Cypress','CI/CD'];
 
-function App() {
-  const [loading, setLoading] = useState(true);
+function Core(){const g=useRef();const pts=useMemo(()=>Array.from({length:14},(_,i)=>{const a=i/14*Math.PI*2;return [Math.cos(a)*2.15,Math.sin(a*2)*.65,Math.sin(a)*2.15]}),[]);useFrame((_,d)=>{if(g.current)g.current.rotation.y+=d*.16});return <group ref={g} rotation={[.2,0,.2]}><Float speed={1.4} rotationIntensity={.25} floatIntensity={.35}><Sphere args={[.78,32,32]}><meshStandardMaterial color="#76a6ff" emissive="#285cff" emissiveIntensity={1.8} metalness={.8} roughness={.2}/></Sphere><Sphere args={[1.12,32,32]}><meshBasicMaterial color="#77a9ff" transparent opacity={.08} wireframe/></Sphere>{pts.map((p,i)=><Sphere key={i} position={p} args={[.08,14,14]}><meshStandardMaterial color="#c0d8ff" emissive="#4b80ff" emissiveIntensity={2}/></Sphere>)}{pts.map((p,i)=><Line key={'l'+i} points={[[0,0,0],p]} color="#5a8eff" transparent opacity={.3} lineWidth={1}/>) }<Text position={[0,-1.5,0]} fontSize={.17} color="#a9c5ff" anchorX="center" letterSpacing={.08}>ENGINEERING CORE</Text></Float></group>}
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-    return () => clearTimeout(timer);
-  });
-
-  return (
-    <div className="homepagebackground">
-      {loading ? (
-        <Pre loading={loading} />
-      ) : (
-        <>
-          <Router>
-            <NavBar />
-            <Routes>
-              <Route path="/" element={<Home />}></Route>
-              <Route path="/about" element={<About />}></Route>
-              <Route path="/experience" element={<Experience />}></Route>
-              <Route path="/education" element={<Education />}></Route>
-              <Route path="/contact" element={<Contact />}></Route>
-            </Routes>
-          </Router>
-        </>
-      )}
-    </div>
-  );
-}
-
-export default App;
-
-const navHeadings = ["Home", "About", "Experience", "Education", "Contact"];
-const navLinks = {
-  Home: "/",
-  About: "/about",
-  Experience: "/experience",
-  Education: "/education",
-  Contact: "/contact",
-};
-
-const NavBar = () => {
-  return (
-    <>
-      <div style={navBarStyles}>
-        <div>
-          <img src={logo} style={{ width: "8%" }} alt="data"></img>
-        </div>
-        {navHeadings.map((item) => {
-          return (
-            <Link
-              className="linkButton"
-              key={item}
-              style={navbarStyle}
-              to={navLinks[item]}
-            >
-              {item}
-            </Link>
-          );
-        })}
-      </div>
-    </>
-  );
-};
-
-function Pre(props) {
-  return (
-    <>
-      {props.loading && (
-        <div className="center">
-          <img src={loader} style={{ width: "70%" }} alt="loader" />
-        </div>
-      )}
-    </>
-  );
-}
+export default function App(){const[open,setOpen]=useState(false);const go=id=>{document.getElementById(id)?.scrollIntoView({behavior:'smooth'});setOpen(false)};return <div className="app"><header className="nav"><button className="brand" onClick={()=>go('home')}><span>GPV</span><small>ENGINEERING</small></button><nav className={open?'navlinks open':'navlinks'}>{['experience','architecture','skills','about'].map(id=><button key={id} onClick={()=>go(id)}>{id}</button>)}<a href="https://github.com/gopinathpv/Gopi-Portfolio" target="_blank" rel="noreferrer">github</a></nav><button className="mobile" onClick={()=>setOpen(!open)} aria-label="menu">{open?<X/>:<Menu/>}</button></header><main>
+<section id="home" className="hero section"><div className="hero-copy"><div className="eyebrow"><span className="pulse"/> AVAILABLE FOR SENIOR ENGINEERING ROLES</div><h1>Gopinath<br/><em>Polasani Vasu</em></h1><p className="lead">Senior Full Stack Engineer building scalable interfaces, distributed systems and AI-powered experiences.</p><div className="hero-actions"><button className="primary" onClick={()=>go('experience')}>Explore my work <ArrowDown size={17}/></button><a className="secondary" href="mailto:gopinpv3@gmail.com">Let's connect <ArrowUpRight size={17}/></a></div><div className="hero-meta"><span>10+ years</span><span>React • TypeScript • Node</span><span>AWS • AI • Architecture</span></div></div><div className="scene"><Canvas camera={{position:[0,.3,5.6],fov:42}} dpr={[1,1.7]}><ambientLight intensity={.55}/><pointLight position={[3,3,4]} intensity={18} color="#6b9cff"/><pointLight position={[-3,-2,2]} intensity={8} color="#7b5cff"/><Core/><OrbitControls enableZoom={false} enablePan={false}/></Canvas></div><div className="scroll-hint"><ArrowDown size={15}/> scroll to enter</div></section>
+<section id="experience" className="section"><div className="section-head"><div><span className="kicker">01 / EXPERIENCE</span><h2>Systems I've helped build.</h2></div><p>Enterprise software, financial platforms and customer-facing products — with an emphasis on measurable impact.</p></div><div className="timeline">{experience.map((j,i)=><article className="job" key={j[0]}><div className="job-index">0{i+1}</div><div className="job-main"><div className="job-top"><div><h3>{j[0]}</h3><p>{j[1]}</p></div><span>{j[2]}</span></div><div className="tag">{j[3]}</div><ul>{j[4].map(b=><li key={b}>{b}</li>)}</ul></div></article>)}</div></section>
+<section id="architecture" className="section architecture"><div className="section-head"><div><span className="kicker">02 / ARCHITECTURE LAB</span><h2>From interface to system.</h2></div><p>A visual snapshot of the engineering patterns behind the work: modular frontends, APIs, cloud services and data.</p></div><div className="arch-card"><div className="arch-flow">{[[Code2,'React / TypeScript','Experience layer'],[Zap,'Micro Frontends','Module Federation'],[BrainCircuit,'Node.js / APIs','Services & workflows'],[Cloud,'AWS','Cloud infrastructure'],[Database,'Data','Reliable persistence']].map(([I,t,s],i)=><span className="arch-unit" key={t}><div className={i===0?'arch-node hot':'arch-node'}><I/><strong>{t}</strong><small>{s}</small></div>{i<4&&<div className="connector"/>}</span>)}</div><div className="arch-caption"><span>ARCHITECTURE PRINCIPLE</span><strong>Keep complexity behind clean boundaries.</strong><p>Design independently deployable experiences, resilient service contracts and reusable components so teams can move quickly without sacrificing reliability.</p></div></div></section>
+<section id="skills" className="section"><div className="section-head"><div><span className="kicker">03 / TOOLBOX</span><h2>Technologies I work with.</h2></div></div><div className="skill-grid">{skills.map((s,i)=><div className="skill" key={s}><span>{String(i+1).padStart(2,'0')}</span><strong>{s}</strong></div>)}</div></section>
+<section id="about" className="section impact"><div className="impact-copy"><span className="kicker">04 / IMPACT</span><h2>Engineering with outcomes in mind.</h2><p>The best systems are not measured by how complicated they are. They're measured by the people and businesses they help.</p><a href="mailto:gopinpv3@gmail.com">Start a conversation <ArrowUpRight size={17}/></a></div><div className="metrics"><div><strong>4,000+</strong><span>agents supported</span></div><div><strong>25%</strong><span>resolution-time reduction</span></div><div><strong>5,000+</strong><span>transactions / day</span></div><div><strong>10+</strong><span>years engineering</span></div></div></section>
+<footer><div><strong>GPV</strong><span>Senior Full Stack Engineer</span></div><div className="social"><a href="https://github.com/gopinathpv/Gopi-Portfolio" target="_blank" rel="noreferrer"><Github size={18}/></a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><Linkedin size={18}/></a><a href="mailto:gopinpv3@gmail.com"><Mail size={18}/></a></div><small>© 2026 Gopinath Polasani Vasu</small></footer></main></div>}
